@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart - Charms Collection</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase.js"></script>
+
+<!-- Cart script -->
+<script src="js/cart.js" defer></script>
+<script src="js/auth.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Your Cart 🛒</h1>
+    <nav style="margin-top: 10px; text-align:center;">
+        <a href="shop.html" class="btn">← Continue Shopping</a>
+    </nav>
+</header>
+
+<!-- Cart Items Container -->
+<section style="padding: 20px;">
+    <div id="cart-container">
+        <!-- Cart items will be dynamically loaded here -->
+    </div>
+</section>
+
+<!-- Total & Checkout -->
+<section style="text-align:center; margin: 20px;">
+    <h2>Total: KES <span id="cart-total">0</span></h2>
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+</section>
+
+<script>
+// Ensure user is logged in
+checkAuth();
+</script>
+
+</body>
+</html>

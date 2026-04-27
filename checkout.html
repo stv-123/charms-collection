@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout - Charms Collection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase.js"></script>
+
+<!-- Checkout & Auth scripts -->
+<script src="js/auth.js" defer></script>
+<script src="js/checkout.js" defer></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Checkout 🛒</h1>
+    <nav style="margin-top: 10px; text-align:center;">
+        <a href="shop.html" class="btn">← Back to Shop</a>
+        <a href="cart.html" class="btn">View Cart</a>
+    </nav>
+</header>
+
+<!-- Order Summary -->
+<section id="checkout-container">
+    <h2>Order Summary</h2>
+    <div id="checkout-items">
+        <!-- Dynamically filled with cart items from checkout.js -->
+    </div>
+    <h3>Total: KES <span id="checkout-total">0</span></h3>
+</section>
+
+<!-- Place Order Button -->
+<section style="text-align:center; margin: 20px;">
+    <button onclick="checkout()" class="btn">Place Order</button>
+</section>
+
+<script>
+// Ensure user is logged in
+checkAuth();
+</script>
+
+</body>
+</html>

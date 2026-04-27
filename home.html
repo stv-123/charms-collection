@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CHARMS COLLECTION</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#111;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:black;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+header h1{
+    font-size:24px;
+    font-weight:700;
+    color:white;
+    text-transform:uppercase;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition: color 0.2s;
+}
+
+nav a:hover{
+    color:#e91e63;
+}
+
+/* HERO */
+.hero{
+    background:#f3f3f3;
+    margin:30px 8%;
+    border-radius:20px;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:25px;
+    color:black;
+    line-height:1.5;
+}
+
+.btn{
+    padding:12px 28px;
+    background:#e91e63;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:500;
+    transition: background 0.3s;
+}
+
+.btn:hover{
+    background:#d81b60;
+}
+
+.hero img{
+    width:350px;
+    border-radius:20px;
+    object-fit:cover;
+    margin-top:20px;
+}
+
+/* CATEGORY GRID */
+.categories{
+    margin:40px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    border-radius:20px;
+    overflow:hidden;
+    min-height:220px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.category-card:hover{
+    transform: translateY(-5px);
+}
+
+.category-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* SALE BANNER */
+.sale{
+    margin:50px 8%;
+    background:#e91e63;
+    color:white;
+    border-radius:20px;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+.sale div{
+    max-width:500px;
+}
+
+.sale img{
+    width:250px;
+    border-radius:20px;
+    object-fit:cover;
+    margin-top:20px;
+}
+
+.sale h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+/* BEST SELLERS */
+.best-sellers{
+    margin:50px 8%;
+}
+
+.best-sellers h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    background:white;
+    box-shadow:0 -2px 6px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+    .hero{
+        flex-direction:column;
+        padding:40px 5%;
+    }
+
+    .hero img{
+        width:100%;
+    }
+
+    .sale{
+        flex-direction:column;
+        padding:40px 5%;
+    }
+
+    .sale img{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CHARMS COLLECTION</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="log-in.html">Login</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Thrifted Corset Tops</h2>
+        <p>One-of-one vintage pieces. Feminine, classy & affordable. Upgrade your wardrobe today.</p>
+        <a href="shop.html" class="btn">Shop Collection</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1520975922071-1c1a9f5e0a5d" alt="Corset Top">
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <div class="category-card c1">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Corset Tops">
+    </div>
+    <div class="category-card c2">
+        <img src="https://images.unsplash.com/photo-1520974735194-9c1f9b1b6f03" alt="Mini Dresses">
+    </div>
+    <div class="category-card c3">
+        <img src="https://images.unsplash.com/photo-1520974735195-2b6e5b0d1921" alt="Vintage Skirts">
+    </div>
+    <div class="category-card c4">
+        <img src="https://images.unsplash.com/photo-1520975693416-35a94d2a28d6" alt="Crop Tops">
+    </div>
+</section>
+
+<!-- SALE BANNER -->
+<section class="sale">
+    <div>
+        <h2>Summer Sale</h2>
+        <p>Up to 20% OFF selected thrifted pieces.</p>
+        <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a89" alt="Sale Outfit">
+</section>
+
+<!-- BEST SELLERS -->
+<section class="best-sellers">
+    <h2>Best Sellers</h2>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1520975693416-35a94d2a28d6" alt="Outfit">
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446" alt="Outfit">
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1520974735194-9c1f9b1b6f03" alt="Outfit">
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1520974735195-2b6e5b0d1921" alt="Outfit">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Charms Collection | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

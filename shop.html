@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shop - Charms Collection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header / Navigation -->
+<header>
+    <h1>Charms Collection</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart 🛒</a>
+        <button onclick="logout()" class="btn">Logout</button>
+    </nav>
+</header>
+
+<!-- Shop Section -->
+<section style="padding: 20px;">
+    <h2 style="text-align:center; margin-bottom:20px;">Shop Corset Tops</h2>
+    <div id="products-container" class="products-grid">
+        <!-- Products will be dynamically loaded here -->
+    </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase.js"></script>
+<script src="js/products.js"></script>
+<script src="js/auth.js"></script>
+
+<script>
+// Check authentication
+checkAuth();
+</script>
+
+</body>
+</html>
